@@ -1,0 +1,20 @@
+{
+  "name": "AI Task Manager",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "frontend/src/**/*.{ts,html,css,scss}": [
+      "cd frontend && npm run lint",
+      "cd frontend && npx run format"
+    ],
+    "backend/src/**/*.{ts,json}": [
+      "cd backend && npx run lint",
+      "cd backend && npx prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5"
+  }
+}

@@ -5,7 +5,7 @@ import { initFlowbite } from 'flowbite';
   selector: 'app-root',
   imports: [],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
   title = 'AI Task Manager';
@@ -13,5 +13,4 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     initFlowbite();
   }
-
 }
