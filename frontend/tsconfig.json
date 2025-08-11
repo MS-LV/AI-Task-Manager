@@ -6,7 +6,13 @@
     "baseUrl": "src",
     "outDir": "./dist/out-tsc",
     "paths": {
-      "@/*": ["app/*"]
+      "@app/*": ["app/*"],
+      "@pages/*": ["pages/*"],
+      "@processes/*": ["processes/*"],
+      "@features/*": ["features/*"],
+      "@widgets/*": ["widgets/*"],
+      "@entities/*": ["entities/*"],
+      "@shared/*": ["shared/*"],
     },
     "strict": true,
     "noImplicitOverride": true,
