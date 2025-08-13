@@ -40,6 +40,18 @@
 /frontendtestem.log
 /frontend/typings
 
+# Frontend Visual Studio Code
+/frontend/.vscode/*
+/frontend/.history/*
+/frontend/.tmp
+/frontend/.code
+
+# Backend Visual Studio Code
+/backend/.vscode/*
+/backend/.history/*
+/backend/.tmp
+/backend/.code
+
 # System files
 /frontend/.DS_Store
 /frontend/Thumbs.db

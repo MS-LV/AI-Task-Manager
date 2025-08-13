@@ -1,9 +1,16 @@
 import { Routes } from '@angular/router';
+import { AUTH_ROUTES } from '@pages/authorization';
+import { HomeComponent } from '@pages/home'; // Assuming HomeComponent is imported
 
 export const routes: Routes = [
     {
-        pathMatch: 'full',
+        path: '',
+        component: HomeComponent, // Assuming HomeComponent is imported
+        pathMatch: 'full'
+    },
+    {
         path: 'auth',
-        loadComponent: () => import('@pages/authorization/authorization.component').then(m => m.AuthorizationComponent),
+        loadComponent: () => import('@pages/authorization').then(m => m.AuthorizationComponent),
+        children: AUTH_ROUTES
     }
 ];
