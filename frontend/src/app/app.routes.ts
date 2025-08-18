@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { AUTH_ROUTES } from '@pages/authorization';
 import { HomeComponent } from '@pages/home'; // Assuming HomeComponent is imported
 
 export const routes: Routes = [
@@ -9,8 +8,22 @@ export const routes: Routes = [
         pathMatch: 'full'
     },
     {
-        path: 'auth',
-        loadComponent: () => import('@pages/authorization').then(m => m.AuthorizationComponent),
-        children: AUTH_ROUTES
+        path: 'dashboard',
+        loadComponent: () => import('@pages/dashboard').then(m => m.DashboardComponent),
+    },
+    {
+        path: 'signin',
+        outlet: 'signin',
+        loadComponent: () => import('@widgets/sign-in').then(m => m.SignInComponent),
+    },
+    {
+        path: 'signup',
+        outlet: 'signup',
+        loadComponent: () => import('@widgets/sign-up').then(m => m.SignUpComponent)
+    },
+    {
+        path: '**',
+        loadComponent: () => import('@pages/not-found').then(m => m.NotFoundComponent)
     }
 ];
+

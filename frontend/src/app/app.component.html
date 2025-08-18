@@ -1,3 +1,8 @@
 <section class="bg-gray-50 dark:bg-gray-900">
+    <app-header [isAsideClosed]="isAsideClosed()" (asideToggledEvent)="isAsideClosed.set($event)" />
+    <!-- Sidebar -->
+    <app-sidebar [isAsideClosed]="isAsideClosed()" />
     <router-outlet />
+    <router-outlet name="signup" />
+    <router-outlet name="signin" />
 </section>

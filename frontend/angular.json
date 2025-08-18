@@ -120,25 +120,32 @@
       "path": "src"
     },
     "@schematics/angular:directive": {
-      "type": "directive"
+      "type": "directive",
+      "path": "src"
     },
     "@schematics/angular:service": {
-      "type": "service"
+      "type": "service",
+      "path": "src"
     },
     "@schematics/angular:guard": {
-      "typeSeparator": "."
+      "typeSeparator": ".",
+      "path": "src"
     },
     "@schematics/angular:interceptor": {
-      "typeSeparator": "."
+      "typeSeparator": ".",
+      "path": "src"
     },
     "@schematics/angular:module": {
-      "typeSeparator": "."
+      "typeSeparator": ".",
+      "path": "src"
     },
     "@schematics/angular:pipe": {
-      "typeSeparator": "."
+      "typeSeparator": ".",
+      "path": "src"
     },
     "@schematics/angular:resolver": {
-      "typeSeparator": "."
+      "typeSeparator": ".",
+      "path": "src"
     }
   }
 }
